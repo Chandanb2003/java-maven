@@ -14,7 +14,7 @@ pipeline {
     stage('Deploy to Tomcat') {
       steps {
         script {
-          def tomcatUrl = "http://admin:adminpassword@http://35.225.1.252:8080/manager/text/deploy?path=/yourapp&update=true"
+          def tomcatUrl = "http://admin:adminpassword@35.225.1.252:8080/manager/text/deploy?path=/yourapp&update=true"
           sh "curl -T target/simple-java-maven-app.war \"${tomcatUrl}\""
         }
       }
