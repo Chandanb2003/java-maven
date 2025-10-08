@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/yourusername/simple-java-maven-app.git'
+                git 'https://github.com/Chandanb2003/java-maven.git'
             }
         }
         stage('Build') {
